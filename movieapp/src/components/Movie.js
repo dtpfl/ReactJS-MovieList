@@ -2,11 +2,11 @@ import React from 'react'
 
 const Movie = ({ movietitle, description, movieimg, releaseDate }) => {
     var img = "https://www.themoviedb.org/t/p/w500" + movieimg;
-    var releaseDate = new Date(releaseDate);
+    var rd = new Date(releaseDate);
     return (
         <section className='movie'>
             <header className='movieHeader'>
-                <h2>{movietitle} ({releaseDate.getFullYear()})</h2>
+                <h2>{movietitle} ({rd.getFullYear()})</h2>
             </header>
 
             <div className='movieInfosWrapper'>
